@@ -47,18 +47,24 @@ export default function Contact() {
         ref={formRef}
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
-          const { error, resetForm } = await sendEmail(formData);
+          try {
+            const { error, resetForm } = await sendEmail(formData);
 
-          if (resetForm) {
-            formRef.current?.reset();
+            if (resetForm) {
+              formRef.current?.reset();
+            }
+
+            if (error) {
+              toast.error(error);
+              return;
+            }
+
+            toast.success("Email sent successfully!");
+          } catch (error) {
+            console.error(error);
+
+            toast.error("An error occurred while sending the email.");
           }
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
-
-          toast.success("Email sent successfully!");
         }}
       >
         <input
