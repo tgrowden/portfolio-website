@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { projectsData } from "@/lib/data";
+import { projectsData } from "../lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -53,7 +53,7 @@ export default function Project({
           alt="Project I worked on"
           quality={95}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
+        transition
         group-hover:scale-[1.04]
         group-hover:-translate-x-3
         group-hover:translate-y-3

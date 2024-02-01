@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
-import { sendEmail } from "@/actions/sendEmail";
+import { sendEmail } from "../actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import { PageSections } from "@/lib/data";
 

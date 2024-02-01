@@ -4,9 +4,9 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import SectionHeading from "./section-heading";
-import { skills } from "@/lib/data";
-import { useSectionInView } from "@/lib/hooks";
-import { PageSections } from "@/lib/data";
+import { skills } from "../lib/data";
+import { useSectionInView } from "../lib/hooks";
+import { PageSections } from "../lib/data";
 
 const fadeInAnimationVariants = {
   initial: {

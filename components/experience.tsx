@@ -7,11 +7,11 @@ import {
   VerticalTimelineElement
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData, Experience as ExperienceItem } from "@/lib/data";
-import { useSectionInView } from "@/lib/hooks";
-import { useTheme, Theme } from "@/context/theme-context";
+import { experiencesData, Experience as ExperienceItem } from "../lib/data";
+import { useSectionInView } from "../lib/hooks";
+import { useTheme, Theme } from "../context/theme-context";
 import SectionHeading from "./section-heading";
-import { PageSections } from "@/lib/data";
+import { PageSections } from "../lib/data";
 
 function formatDate(date: Date) {
   return new Intl.DateTimeFormat("en-US", {
