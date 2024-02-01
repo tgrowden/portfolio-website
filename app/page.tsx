@@ -1,3 +1,6 @@
+import React from "react";
+import { ErrorBoundary } from "react-error-boundary";
+
 import About from "../components/about";
 import Contact from "../components/contact";
 import Experience from "../components/experience";
@@ -15,7 +18,26 @@ export default function Home() {
       {/* <Projects /> */}
       <Skills />
       <Experience />
-      <Contact />
+      <ErrorBoundary
+        fallback={
+          <div className="mb-10 text-center">
+            <p>There was an error submitting the form.</p>
+
+            <p>
+              Please contact me directly at{" "}
+              <a
+                className="underline"
+                href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
+              >
+                {process.env.NEXT_PUBLIC_EMAIL}
+              </a>
+              .
+            </p>
+          </div>
+        }
+      >
+        <Contact />
+      </ErrorBoundary>
     </main>
   );
 }
