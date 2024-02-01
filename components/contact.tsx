@@ -37,7 +37,10 @@ export default function Contact() {
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href={process.env.NEXT_PUBLIC_EMAIL}>
+        <a
+          className="underline"
+          href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
+        >
           {process.env.NEXT_PUBLIC_EMAIL}
         </a>{" "}
         or through this form.
