@@ -27,7 +27,7 @@
   "devDependencies": {
     "@types/node": "20.3.2",
     "@types/react": "18.2.14",
-    "@types/react-dom": "18.2.0",
+    "@types/react-dom": "18.2.6",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
