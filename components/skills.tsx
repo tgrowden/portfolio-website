@@ -1,18 +1,19 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 import SectionHeading from "./section-heading";
 import { skills } from "../lib/data";
 import { useSectionInView } from "../lib/hooks";
 import { PageSections } from "../lib/data";
 
-const fadeInAnimationVariants = {
+const fadeInAnimationVariants: Variants = {
   initial: {
     opacity: 0,
     y: 100
   },
+
   animate: (index: number) => ({
     opacity: 1,
     y: 0,
@@ -50,7 +51,7 @@ export default function Skills() {
                 >
                   {skills.map((skill, index) => (
                     <motion.li
-                      className="bg-white border border-black/10 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+                      className="bg-white border border-black/10 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 cursor-default"
                       key={skill}
                       variants={fadeInAnimationVariants}
                       initial="initial"

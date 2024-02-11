@@ -153,7 +153,7 @@ export const skills: Skill[] = [
       "MongoDB",
       "Git",
       "Express"
-    ]
+    ].sort()
   },
 
   {
@@ -166,7 +166,7 @@ export const skills: Skill[] = [
       "Candidate Interviewing & Technical Screening",
       "Mentoring",
       "Code Reviews"
-    ]
+    ].sort()
   }
 ];
 

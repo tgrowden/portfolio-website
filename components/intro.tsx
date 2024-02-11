@@ -10,7 +10,6 @@ import { FaGithubSquare } from "react-icons/fa";
 
 import { useSectionInView } from "../lib/hooks";
 import { useActiveSectionContext } from "../context/active-section-context";
-// import Headshot from "@/public/headshot.jpeg";
 import { PageSections, experiencesData } from "../lib/data";
 
 const linkedinUsername = process.env.NEXT_PUBLIC_LINKEDIN_USERNAME;
@@ -116,7 +115,7 @@ export default function Intro() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            View CV{" "}
+            View Resume{" "}
             <HiDocumentText className="opacity-60 group-hover:translate-x-1 transition" />
           </a>
         )}
